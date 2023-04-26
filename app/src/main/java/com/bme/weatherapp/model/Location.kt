@@ -1,4 +1,6 @@
 package com.bme.weatherapp.model
 
-class Location {
-}
+data class Location(
+    val latitude: Double,
+    val longitude: Double
+)
