@@ -1,8 +1,8 @@
 package com.bme.weatherapp.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class Weather(
-    val temperature : Double,
-    val conditions : String,
-    val windSpeed : Double,
-    val airPressure : Double
+    val main: String
 )

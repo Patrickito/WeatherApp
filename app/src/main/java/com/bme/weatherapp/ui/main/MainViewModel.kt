@@ -1,4 +1,4 @@
 package com.bme.weatherapp.ui.main
 
-class ManViewModel {
+class MainViewModel {
 }
