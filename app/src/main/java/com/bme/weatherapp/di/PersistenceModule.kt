@@ -24,6 +24,7 @@ object PersistenceModule {
                 "city_database"
             )
             .fallbackToDestructiveMigration()
+            .allowMainThreadQueries()
             .build()
     }
 
