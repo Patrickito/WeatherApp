@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class WeatherData(
     val coord: Location,
-    val weather: Weather,
+    val weather: List<Weather>,
     val main: Main,
     val wind: Wind,
 )

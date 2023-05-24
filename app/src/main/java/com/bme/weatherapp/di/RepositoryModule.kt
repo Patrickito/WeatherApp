@@ -1,5 +1,6 @@
 package com.bme.weatherapp.di
 
+import com.bme.weatherapp.gps.LocationService
 import com.bme.weatherapp.network.WeatherService
 import com.bme.weatherapp.persistence.CityDao
 import com.bme.weatherapp.ui.main.MainRepository
@@ -17,8 +18,9 @@ object RepositoryModule {
     @ViewModelScoped
     fun provideMainRepository(
         weatherService: WeatherService,
+        locationService: LocationService,
         cityDao: CityDao
     ): MainRepository {
-        return MainRepository(weatherService, cityDao)
+        return MainRepository(weatherService, locationService, cityDao)
     }
 }
